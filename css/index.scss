@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+$dark2: #3f4143;
+$dark1: #1c1919;
+$dark: #5f6062;
+$warning: #fd9e2b;
+$borderline: rgba(226, 223, 223, 0.65);
+$danger: #cb6262;
+$success: #90cb62;
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+
+}
+
+.flex-1 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-danger{
+  background-color: $danger;
+}
+
+.bg-warning{
+  background-color: $warning;
+}
+
+.bg-success{
+  background-color: $success;
+}
+
+.btn-dark{
+  background-color: $dark;
+}
+
+.btn-dark2{
+  background-color: $dark2;
+}
+
+.btn-warning{
+  background-color: $warning;
+}
+
+
+.container {
+  background-color: $danger;
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .calculator{
+    background-color: $dark1;
+    height: 705px;
+    width: 484px;
+    border-radius: 21px;
+   
+  
+
+    .top-panel{
+      
+      // background-color: $success;
+    
+      .first{
+        height: 64px;
+        width: 484px;
+        display: flex;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 18px;
+
+            
+        .indicator{
+          // background-color: white;
+          width: 19px;
+          height: 19px;
+          border-radius: 100%;
+          margin-right: 22px;
+          
+        }
+      }
+
+      .second{
+        height: 136px;
+        display: flex;
+        justify-content: flex-end;
+        // padding: 24px;
+        align-items: center;
+        border-top: 2px solid $borderline;
+        border-bottom: 2px solid $borderline;
+        width: 485px;
+        color: white;
+        // margin-right: 15px;
+      }
+
+      
+    }
+
+    .keys{
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-between;
+      height: 200px;
+      
+      // background-color: red;
+
+        .row{
+          display: flex;
+          justify-content: space-between;
+
+          .btn{
+            width: 114px;
+            height: 94px;
+            border-radius: 10px;
+            font-size: 40px;
+            font-weight: 300px;
+            color: white;
+
+          }
+
+          .first-row{
+            display: flex;
+          }
+
+          .ac{
+            width: 346px;
+            color: white;
+            flex: 1;
+          }
+
+        }
+    }
+
+        
+  }
+}
+
+
+
